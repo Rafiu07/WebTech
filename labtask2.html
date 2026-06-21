@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+<style>
+  body {
+    background-color: #fffafa;
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+      text-align: center;
+      color: navy;
+  }
+  form{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+  }
+
+  input,
+  textarea,
+  select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+
+</style>
+
+<link rel="stylesheet" href="external.css">
+
+</head>
+
+<body>
+
+<h2 style="text-decoration: underline;"> Registration Form</h2><br>
+
+
+<form action="#" method="post">
+
+<label for="name-label" class="f">Full Name:</label><br>
+<input type="text" id="name-label" name="name" class="f" placeholder="Enter Name" required><br>
+
+<br><label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="Enter Email required"><br>
+
+<br><label for="number">Phone Number:</label>
+<br><input type="number" id="number" name="number" placeholder="Enter Phone Number" required><br>
+
+<br><label>Gender:</label><br>
+<input type="radio" id="g1" name="choice" value="Male" required>
+<label for="g1">Male</label>
+<input type="radio" id="g2" name="choice" value="Female" required>
+<label for="g2">Female</label>
+<input type="radio" id="g3" name="choice" value="Other" required>
+<label for="g3">Other</label><br>
+
+<br><label>Date of Birth</label><br><input type="date" required><br>
+
+<br><label for="password">Password</label><br><input type="password" id="password" name="password" placeholder="Password" required><br>
+
+<br><label for="cp">Confirm Password</label><br><input type="password" id="cp" name="cp" placeholder="Confirm Password" required><br>
+
+<br><label for="add">Address</label><br>
+<textarea rows="6" cols="30" placeholder="Type Address" id="add" name="add" required></textarea><br>
+
+<br><label for="select">Department</label>
+<br><select id="select" required>
+  <option value="" disabled selected>-- Please select an option --</option>
+  <option value="CSE">CSE</option>
+  <option value="EEE">EEE</option>
+  <option value="BBA">BBA</option>
+  <option value="LAW">LAW</option>
+</select><br>
+
+<br>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree with the Term and Condition</label>
+<br>
+
+<br><input type="submit" value="Register" style="background-color: green ">
+<input type="reset" style="background-color: red">
+
+
+</form>
+</body>
+</html>
+
