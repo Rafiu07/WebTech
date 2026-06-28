@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Registration Form</title>
+    
+    <style>
+       
+        fieldset {
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+      
+        legend {
+            font-weight: bold;
+            font-size: 1.15em;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+
+      
+        .donor-section {
+            background-color: rgb(235, 227, 215); 
+        }
+        .donor-section legend {
+            background-color: rgb(209, 198, 182);
+            color: #333;
+        }
+
+       
+        .request-section {
+            background-color: rgb(194, 169, 133); 
+        }
+        .request-section legend {
+            background-color: rgb(152, 123, 81);
+            color: white;
+        }
+
+        body {
+            background-color: #fffafa;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 800px;
+            margin: auto;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid rgb(240, 225, 225);
+            border-radius: 10px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box; 
+        }
+
+        input[type="radio"],
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            width: auto;
+            display: inline-block;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+
+        .radio-label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        table {
+            width: 100%;
+            background-color: white; 
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>    
+</head>
+<body>
+
+    <header>
+        <h2 style="text-decoration: underline; text-align: center; color: darkred;">Welcome to the Life Saver Donor Portal</h2>
+    </header>
+    <h4 style="text-align: center; color: navy;">This site is made to help connect blood donors with those in need.</h4>
+    <form action="#" method="post">
+
+        <fieldset class="donor-section">
+            <legend class="donor-section legend">Blood Donor Registration Form</legend><br><br>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br> <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter Age" required><br><br> <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male" class="radio-label">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female" class="radio-label">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other" class="radio-label">Other</label><br><br>
+
+        <label for="blood">What is your blood type?</label><br>
+        <select id="blood" name="blood" required>
+            <option value="" disabled selected>Select your blood type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option> 
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="Enter Address" required><br><br>
+
+        <label for="last-donation">When was your last blood donation?</label><br>
+        <input type="date" id="last-donation" name="last-donation" required><br><br>
+
+        <label for="health">Current Health Condition:</label><br>
+        <input type="text" id="health" name="health" placeholder="Enter your current health condition" required><br><br>
+
+        </fieldset><br>
+
+
+
+        <fieldset class="request-section">
+            <legend class="request-section legend">Blood Request Information</legend><br><br>
+            <label for="name">Patient name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="required-blood-group">Required Blood Group:</label><br>
+            <select id="required-blood-group" name="required-blood-group" required>
+                <option value="">Select a blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br><br>
+
+            <label for="hospital-name">Hospital Name:</label><br>
+            <input type="text" id="hospital-name" name="hospital-name" placeholder="Enter the hospital name" required><br><br>
+
+            <label for="phone">Emergency Contact:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="required-date">Required Date:</label><br>
+            <input type="date" id="required-date" name="required-date" required><br><br>
+
+            <label for="additional-message">Additional Message:</label><br>
+            <textarea id="additional-message" name="additional-message" placeholder="Enter any additional information" rows="4" cols="50"></textarea><br><br>
+
+            <label for="tabel">Stock Table:</label><br>
+            <table id="tabel" border="2">
+                <thead>
+                    <tr>
+                        <th>Blood Group</th>
+                        <th>Units Available</th>
+                        <th>Registered Donors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A+</td>
+                        <td>10</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>8</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td>3</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>AB+</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>AB-</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>O+</td>
+                        <td>12</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>O-</td>
+                        <td>4</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+            <div class="button-container">
+                <input type="submit" value="Submit" style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                <input type="reset" value="Reset" style="background-color: gray; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            </div>
+    </form>
+    <footer>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 Life Saver Donor Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
