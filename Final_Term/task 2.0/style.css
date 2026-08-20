@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 15px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.portal-header {
+    background-color: #14274e;
+    color: #ffffff;
+    padding: 22px 30px;
+    text-align: center;
+}
+
+.portal-header h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.portal-header p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #b9c6de;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f0f3f8;
+    padding: 14px 10px;
+    font-size: 12px;
+}
+
+.steps span {
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #dfe6f2;
+    color: #5a6b8c;
+}
+
+.steps span.active {
+    background-color: #2a5298;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.form-wrapper {
+    padding: 30px 35px 35px 35px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2c3e50;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #445068;
+}
+
+.course-list {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 12px 14px;
+}
+
+.course-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2c3e50;
+    padding: 6px 0;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1e3c72;
+}
+
+.btn-secondary {
+    background-color: #6c7a94;
+}
+
+.btn-secondary:hover {
+    background-color: #55617a;
+}
+
+.btn-danger {
+    background-color: #b23b3b;
+}
+
+.btn-danger:hover {
+    background-color: #8f2e2e;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.error-box {
+    background-color: #fdecea;
+    border: 1px solid #f5b5ac;
+    color: #9c2b1f;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.error-box ul {
+    margin-left: 18px;
+    margin-top: 4px;
+}
+
+.info-card {
+    background-color: #f5f8fc;
+    border: 1px solid #dde5f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 22px;
+}
+
+.info-card h3 {
+    font-size: 14px;
+    color: #14274e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px dashed #dde5f0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row span:first-child {
+    color: #5a6b8c;
+}
+
+.info-row span:last-child {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #dbe9dd;
+    color: #276738;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 12px;
+    margin-left: 6px;
+}
+
+.badge.cookie {
+    background-color: #fbe7cc;
+    color: #8a5a12;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: #8593ac;
+    margin-top: 18px;
+}
+
+.success-box {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.success-box .icon {
+    font-size: 46px;
+    color: #2f9e5b;
+    margin-bottom: 10px;
+}
