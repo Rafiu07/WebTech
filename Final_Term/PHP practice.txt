@@ -1,0 +1,133 @@
+<?php
+echo "Hello world";
+?>
+
+<?php
+$name ="Rafeeu";
+$Name ="Asif";
+$age =30;
+
+echo $name;
+echo $Name;
+echo $age;
+?>
+
+<?php
+if(5>3 and 5<10){
+    echo "True";
+}
+else{
+    echo "False";
+}
+?>
+
+<?php
+$name="Rafeeu";
+$age=20;
+$cgpa=3.5;
+$istrue=true;
+
+var_dump($name)s;
+var_dump($age);
+var_dump($cgpa);
+var_dump($istrue);
+?>
+
+<?php
+$first="Rafeeu";
+$last="Ahmed";
+
+echo  $first." ". $last;
+?>
+
+<?php
+$a=6;
+$b=3;
+echo $a+$b;
+echo "<br>";
+echo $a-$b;
+echo "<br>";
+echo $a*$b;
+echo "<br>";
+echo $a/$b;
+echo "<br>";
+echo $a%$b;
+echo "<br>";
+?>
+
+
+<?php
+$marks=85;
+if($marks>80){
+    echo "Excellent";
+}
+?>
+
+<?php
+$marks=85;
+if($marks>80){
+    echo "A+";
+}
+else if($marks>70){
+    echo "A";
+}
+else if($marks>60){
+    echo "B";
+}
+else if($marks>50){
+    echo "C";
+}
+else{
+    echo "Fail";
+}
+?>
+
+
+<?php
+$day ="Friday";
+
+switch($day) {
+    case "Monday":
+        echo "Today is Monday";
+        break;
+    case "Tuesday":
+        echo "Today is Tuesday";
+        break;
+    case "Wednesday":
+        echo "Today is Wednesday";
+        break;
+    case "Thursday":
+        echo "Today is Thursday";
+        break;
+    case "Friday":
+        echo "Today is Friday";
+        break;
+    case "Saturday":
+        echo "Today is Saturday";
+        break;
+    case "Sunday":
+        echo "Today is Sunday";
+        break;
+    default:
+        echo "Invalid day";
+}
+
+
+<?php
+$i=1;
+while($i<=5)
+    {
+        echo $i."<br>";
+        $i++;
+    }
+?>
+
+
+
+<?php
+$i=1;
+do{
+    echo $i."<br>";
+    $i++;
+}while($i<=5);
+?>
